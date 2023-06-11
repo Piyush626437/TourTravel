@@ -8,6 +8,7 @@ import Grid from '../HomeComponent/Grid';
 import Carousel from '../HomeComponent/Carousel';
 import Footer from '../HomeComponent/Footer';
 import KedarnathTag from '../HomeComponent/KedarnathTag';
+import Review from '../HomeComponent/Review';
 
 const Home = () => {
     return (
@@ -17,7 +18,12 @@ const Home = () => {
                 <ServiceTag />
                 <KedarnathTag />
                 <Grid />
+                
+                <Review/>
+               
                 <Footer />
+
+
           
         </>
     );

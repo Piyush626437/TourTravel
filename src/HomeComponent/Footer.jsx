@@ -1,19 +1,20 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            <section className="footer-section">
+            <section className="footer-section my-4">
                 <div className="conabouttainer">
                     <div className="row">
                         <div className="col-md-4">
                             <div className="footer-widget">
                                 <h3>About Us</h3>
                                 {/* &amp;=& */}
-                                <p>"Join us on an unforgettable adventure where every day is a new discovery waiting to unfold." ...</p> </div> </div> <div className="col-md-4"> <div className="footer-widget"> <h3>Quick Links</h3> <ul> <li><a href="https://www.tripclap.com/partner/trip-soul">Home</a></li> <li><a href="https://www.tripclap.com/partner/trip-soul/packages">Tour Packages</a></li> <li><a href="https://www.tripclap.com/partner/trip-soul/reviews">Reviews</a></li>
-                                    <li><a href="https://www.tripclap.com/partner/trip-soul/about-us">About Us</a></li>
-                                    <li><a href="https://www.tripclap.com/partner/trip-soul/contact-us">Contact Us</a></li>
+                                <p>"Join us on an unforgettable adventure where every day is a new discovery waiting to unfold." ...</p> </div> </div> <div className="col-md-4"> <div className="footer-widget"> <h3>Quick Links</h3> <ul> <li>    <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink></li> <li><NavLink className="nav-link" to="/tourdetail">TourDetails</NavLink></li>
+                                    <li> <NavLink className="nav-link" to="/about">AboutUs</NavLink></li>
+                                    <li> <NavLink className="nav-link" to="/Contactus">ContactUs</NavLink></li>
                                 </ul> </div> </div>
                         <div className="col-md-4">
                             <div className="footer-widget">

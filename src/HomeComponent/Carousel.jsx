@@ -4,17 +4,71 @@ import im2 from "../Imge/img.jpg"
 import im3 from "../Imge/3.jpg"
 // import k1 from "../Imge/k1.jpg"
 import k1 from "../Imge/k1.jpg"
+import M1 from "../Imge/M1.jpg"
+import M2 from "../Imge/M2.jpg"
 
 const Carousel = () => {
     return (
         <>
-            <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
+         <div id="myCarousel" className="carousel slide" data-ride="carousel">
+        <ol className="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to={0} className="active" />
+          <li data-target="#myCarousel" data-slide-to={1} />
+          <li data-target="#myCarousel" data-slide-to={2} />
+        </ol>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            {/* img */}
+            {/* <svg className="bd-placeholder-img" width="100%" style={{height: '500px !important'}} xmlns={"../Imge/M2.jpg"} preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg> */}
+            <img src={M1} className="bd-placeholder-img" width="100%" style={{height: '500px !important'} } preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt="..." />
+            <div className="container">
+              <div className="carousel-caption text-left">
+                <h1>Enjoy Life Tour</h1>
+                <p>Lorem ipsum dolor sit amemnis nulla, sed. Impedit, ad qui.</p>
+                <p><a className="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            {/* img */}
+            {/* <svg className="bd-placeholder-img" width="100%" style={{height: '500px !important'}}  xmlns={im2} preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg> */}
+            <img src={M2} className="bd-placeholder-img" width="100%" style={{height: '500px !important'}} preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt="..." />
+            <div className="container">
+              <div className="carousel-caption">
+                <h1>Second example heading.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi aliquid tempore eveniet adipisci ipsam expedita esse perferendis aperiam! Error cupiditate totam sit labore repudiandae nostrum quas saepe fuga incidunt.</p>
+                <p><a className="btn btn-lg btn-primary" href="#" role="button">Know more</a></p>
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            {/* img */}
+            <svg className="bd-placeholder-img" width="100%" style={{height: '500px !important'}}  xmlns={im3} preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
+            <div className="container">
+              <div className="carousel-caption text-right">
+                <h1>One more example...</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum animi alias velit nulla commodi dignissimos vel, deleniti pariatur labore reiciendis ipsum eos ea molestiae officia culpa porro quas reprehenderit..</p>
+                <p><a className="btn btn-lg btn-primary" href="#" role="button">Go to page</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+            {/* <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 {/* <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div> */}
-                <div className="carousel-inner">
+                {/* <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={k1} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
@@ -53,7 +107,7 @@ const Carousel = () => {
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> */} */}
         </>
     );
 }

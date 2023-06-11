@@ -1,14 +1,22 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React from "react";
+import BearCarousel, {BearSlideImage} from 'bear-react-carousel';
+import img from "../Imge/im.jpg";
+import im from "../Imge/img.jpg"
+import Aboutus from "../AboutUsComponent.jsx/Aboutus";
 
 
 const  About=()=> {
+
+   
   return (
    <>
-   <h1>Hello About</h1>
+ <Aboutus/>
    </>
   );
 }
 
-export default About;
+
+export default About;;
+

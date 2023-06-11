@@ -14,6 +14,7 @@ import Navbar from "./Components/Navbar"
 import Contact from './Components/ContactUs';
 // import TourDetail from "./Components/TourPackage"
 import TourDetail from "./Components/TourDetail"
+// import About from './Components/About';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Contactus" element={<Contact />} />
         <Route path="/tourdetail" element={<TourDetail />} />
+        <Route path="/about" element={<About/>} />
+
       </Routes>
 
 
