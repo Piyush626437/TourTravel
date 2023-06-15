@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import About_img from "../Imge/About_img.png"
 const Aboutus=()=>
 {
     return (
@@ -9,10 +10,14 @@ const Aboutus=()=>
         
     <section className="about">
            <div className="main">
-            <img src="./files/aboutpic.png" alt="My Photo"/>
+            {/* <img src={About_img} width="40" alt="My Photo"/> */}
             <div className="abt-text">
                 <h1>About <span>Us</span></h1>
-                <p>Firstflight Travels is a travel website project developed by Mohd. Rahil using HTML, CSS and JavaScript.</p>
+                <p>Welcome to AM Tour And Travels `Enjoy Life Tours‘ ! We are a group of experienced and knowledgeable tour guides who are passionate about showing our guests the best trips of their life. We offer a variety of tours, from historical walking tours to nature walks to food tours. We can tailor our tours to your interests and needs, so you can be sure to have a memorable experience.
+
+Our tours are led by experienced guides who are experts in their field. They will share their knowledge and enthusiasm with you, and help you to make the most of your visit. We also offer a variety of activities and excursions, so you can explore your trips at your own pace.
+
+We hope to see you soon!.</p>
                 <a href="" className="connectbtn" target="_blank">Connect with me!</a>
 
                 <div className="connect-section">

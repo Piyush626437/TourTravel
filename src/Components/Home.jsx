@@ -19,7 +19,7 @@ const Home = () => {
                 <KedarnathTag />
                 <Grid />
                 
-                <Review/>
+                {/* <Review/> */}
                
                 <Footer />
 

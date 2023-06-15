@@ -1,38 +1,35 @@
 import React from 'react'
-import im1 from "../Imge/im.jpg"
-import im2 from "../Imge/img.jpg"
-import im3 from "../Imge/3.jpg"
-// import k1 from "../Imge/k1.jpg"
-import k1 from "../Imge/k1.jpg"
+
+
 import M1 from "../Imge/M1.jpg"
-import M2 from "../Imge/M2.jpg"
+
 
 const Carousel = () => {
     return (
         <>
          <div id="myCarousel" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
+        {/* <ol className="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to={0} className="active" />
           <li data-target="#myCarousel" data-slide-to={1} />
           <li data-target="#myCarousel" data-slide-to={2} />
-        </ol>
+        </ol> */}
         <div className="carousel-inner">
           <div className="carousel-item active">
             {/* img */}
             {/* <svg className="bd-placeholder-img" width="100%" style={{height: '500px !important'}} xmlns={"../Imge/M2.jpg"} preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg> */}
             <img src={M1} className="bd-placeholder-img" width="100%" style={{height: '500px !important'} } preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt="..." />
             <div className="container">
-              <div className="carousel-caption text-left">
+              {/* <div className="carousel-caption text-left">
                 <h1>Enjoy Life Tour</h1>
                 <p>Lorem ipsum dolor sit amemnis nulla, sed. Impedit, ad qui.</p>
                 <p><a className="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="carousel-item">
+          {/* <div className="carousel-item">
             {/* img */}
             {/* <svg className="bd-placeholder-img" width="100%" style={{height: '500px !important'}}  xmlns={im2} preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg> */}
-            <img src={M2} className="bd-placeholder-img" width="100%" style={{height: '500px !important'}} preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt="..." />
+            {/* <img src={M2} className="bd-placeholder-img" width="100%" style={{height: '500px !important'}} preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt="..." />
             <div className="container">
               <div className="carousel-caption">
                 <h1>Second example heading.</h1>
@@ -40,10 +37,10 @@ const Carousel = () => {
                 <p><a className="btn btn-lg btn-primary" href="#" role="button">Know more</a></p>
               </div>
             </div>
-          </div>
-          <div className="carousel-item">
+          </div> */} 
+          {/* <div className="carousel-item">
             {/* img */}
-            <svg className="bd-placeholder-img" width="100%" style={{height: '500px !important'}}  xmlns={im3} preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
+            {/* <svg className="bd-placeholder-img" width="100%" style={{height: '500px !important'}}  xmlns={im3} preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
             <div className="container">
               <div className="carousel-caption text-right">
                 <h1>One more example...</h1>
@@ -52,15 +49,16 @@ const Carousel = () => {
               </div>
             </div>
           </div>
-        </div>
-        <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+         </div> 
+        {/* <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true" />
           <span className="sr-only">Previous</span>
         </a>
         <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="sr-only">Next</span>
-        </a>
+        </a> */}
+      </div>
       </div>
             {/* <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 {/* <div className="carousel-indicators">
@@ -107,7 +105,7 @@ const Carousel = () => {
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
-            </div> */} */}
+            </div> */} 
         </>
     );
 }

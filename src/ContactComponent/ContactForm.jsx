@@ -37,11 +37,11 @@ const ContactForm=()=>
     <div className="valid-tooltip">
       Looks good!
     </div>
-    <div class="mt1">
-    <label for="exampleDataList" class="form-label">To</label>
-    <div  class="input-icon-box">
-<input class="form-control" list="datalistOptions" id="exampleDataList" name ="to"placeholder="Search Destination"  onChange={handleChange}   value={data.to} />
-<i class="fa fa-map-marker iconb f17 c10" aria-hidden="true"></i>
+    <div className="mt1">
+    <label htmlFor="exampleDataList" className="form-label">To</label>
+    <div  className="input-icon-box">
+<input className="form-control" list="datalistOptions" id="exampleDataList" name ="to"placeholder="Search Destination"  onChange={handleChange}   value={data.to} />
+<i className="fa fa-map-marker iconb f17 c10" aria-hidden="true"></i>
 </div>
 </div>
 
@@ -52,11 +52,11 @@ const ContactForm=()=>
   <option value="Indore"/>
   <option value="Narmadapuram"/>
 </datalist>
-<div class="mt1">
-    <label for="exampleDataList" class="form-label">From</label>
-    <div  class="input-icon-box">
-<input class="form-control" list="datalistOptions"  id="exampleDataList" name ="from" placeholder="Search Destination"  onChange={handleChange}  value={data.from} />
-<i class="fa fa-map-marker iconb f17 c10" aria-hidden="true"></i>
+<div className="mt1">
+    <label htmlFor="exampleDataList" className="form-label">From</label>
+    <div  className="input-icon-box">
+<input className="form-control" list="datalistOptions"  id="exampleDataList" name ="from" placeholder="Search Destination"  onChange={handleChange}  value={data.from} />
+<i className="fa fa-map-marker iconb f17 c10" aria-hidden="true"></i>
 </div>
 </div>
 <datalist id="datalistOptions">
@@ -85,7 +85,7 @@ const ContactForm=()=>
           <textarea className="form-control"   id="exampleFormControlTextarea1" name ="query" rows={3} defaultValue={""} onChange={handleChange}  value={data.query} />
         </div>
         
-        <button  className="btn btn-danger" onSubmit={handleSubmit} data-bs-toggle="modal"  data-bs-target="#SubmitModal"><a id='submitbutton' href={`https://wa.me/916264371230?text=Name-%20${data.name}%0aTo-%20${data.to}%0aFrom-%20${data.from}%0aMobile-%20${data.mobile}%0aEmail-%20${data.email}%0aQuery-%20${data.query}`} target='_blank'>Submit</a></button>
+        <button  className="btn btn-danger" onSubmit={handleSubmit} data-bs-toggle="modal"  data-bs-target="#SubmitModal"><a id='submitbutton' href={`https://wa.me/918815998314?text=Name-%20${data.name}%0aTo-%20${data.to}%0aFrom-%20${data.from}%0aMobile-%20${data.mobile}%0aEmail-%20${data.email}%0aQuery-%20${data.query}`} target='_blank'>Submit</a></button>
        
         {/* login Modal */}
         <div className="modal fade" id="SubmitModal" tabIndex={-1} aria-labelledby="SubmitModalLabel" aria-hidden="true">

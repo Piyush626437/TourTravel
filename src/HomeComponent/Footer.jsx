@@ -18,7 +18,7 @@ const Footer = () => {
                                 </ul> </div> </div>
                         <div className="col-md-4">
                             <div className="footer-widget">
-                                <h3>Contact Info</h3> <ul> <li>Shoaib Ali</li>
+                                <h3>Contact Info</h3> <ul> <li>Aman Singh Lodhi</li>
                                     <li><i className="fa fa-phone" aria-hidden="true"></i>8770327853</li>
                                     <li><i className="fa fa-envelope"></i> Enjoylifetours0909@gmail.com</li>
                                 </ul>

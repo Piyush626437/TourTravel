@@ -15,7 +15,7 @@ const ServiceTag = () => {
                                 </div>
                                 <div className="service-content"> <h3 className="text-uppercase"> amazing tour packages </h3>
                                     <p>Handpicked holidays for you.</p> </div> </div> </div>
-                        <div className="col-md-4"> <div className="single-service-box">
+                        <div className="col-md-4 my-2"> <div className="single-service-box">
                             <div className="service-img">
                                  <img src={s2} alt="service-icon"/>
                             </div> 
@@ -24,7 +24,7 @@ const ServiceTag = () => {
                                 <h3 className="text-uppercase"> book top class hotel </h3>
                                 <p>We provide only Top rated hotels.</p>
                             </div> </div> </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 my-2">
                             <div className="single-service-box">
                                 <div className="statistics-img">
                                     <img src={s3} alt="service-icon" /> </div>
