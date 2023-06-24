@@ -5,6 +5,7 @@ import BearCarousel, {BearSlideImage} from 'bear-react-carousel';
 import img from "../Imge/im.jpg";
 import im from "../Imge/img.jpg"
 import Aboutus from "../AboutUsComponent.jsx/Aboutus";
+import Footer from "../HomeComponent/Footer"
 
 
 const  About=()=> {
@@ -13,6 +14,7 @@ const  About=()=> {
   return (
    <>
  <Aboutus/>
+ <Footer/>
    </>
   );
 }

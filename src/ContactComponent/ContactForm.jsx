@@ -3,7 +3,7 @@ import "font-awesome/css/font-awesome.min.css";
 import { useState } from 'react';
 const ContactForm=()=>
 {
-  const [data,setData]=useState({name:"",to:"",from:"",email:"",mobile:"",query:""});
+  const [data,setData]=useState({name:"",to:"",email:"",mobile:"",query:""});
   const handleChange=(e)=>
   {
     const name=e.target.name;
@@ -20,7 +20,7 @@ const ContactForm=()=>
 
 
   }
-  let ans=()=>{"https://wa.me/916264371230?text=Hello%20Everyone"}
+  
     return(
        <>
 		<div className="contains" >
@@ -52,25 +52,12 @@ const ContactForm=()=>
   <option value="Indore"/>
   <option value="Narmadapuram"/>
 </datalist>
-<div className="mt1">
-    <label htmlFor="exampleDataList" className="form-label">From</label>
-    <div  className="input-icon-box">
-<input className="form-control" list="datalistOptions"  id="exampleDataList" name ="from" placeholder="Search Destination"  onChange={handleChange}  value={data.from} />
-<i className="fa fa-map-marker iconb f17 c10" aria-hidden="true"></i>
-</div>
-</div>
-<datalist id="datalistOptions">
-  <option value="Kedarnath"/>
-  <option value="Badrinath"/>
-  <option value="Bhopal,MadhyaPradesh"/>
-  <option value="Indore"/>
-  <option value="Narmadapuram"/>
-</datalist>
+
     {/* <div className="valid-feedback"> */}
     
-        <div className="mb-3 my-3">
+        <div className="mb-3 my-2">
           <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
-          <input type="email" className="form-control" name ="email"  id="exampleFormControlInput1" placeholder="name@example.com" onChange={handleChange}   value={data.email}/>
+          <input type="email" className="form-control" name ="email"  id="exampleFormControlInput1" placeholder="Enter Your Email Address" onChange={handleChange}   value={data.email}/>
         </div>
         
         <div className="input-group mb-3 my-3">
@@ -85,7 +72,7 @@ const ContactForm=()=>
           <textarea className="form-control"   id="exampleFormControlTextarea1" name ="query" rows={3} defaultValue={""} onChange={handleChange}  value={data.query} />
         </div>
         
-        <button  className="btn btn-danger" onSubmit={handleSubmit} data-bs-toggle="modal"  data-bs-target="#SubmitModal"><a id='submitbutton' href={`https://wa.me/918815998314?text=Name-%20${data.name}%0aTo-%20${data.to}%0aFrom-%20${data.from}%0aMobile-%20${data.mobile}%0aEmail-%20${data.email}%0aQuery-%20${data.query}`} target='_blank'>Submit</a></button>
+        <button  className="btn btn-danger" onSubmit={handleSubmit} data-bs-toggle="modal"  data-bs-target="#SubmitModal"><a id='submitbutton' href={`https://wa.me/918770327853?text=Name-%20${data.name}%0aTo-%20${data.to}%0aMobile-%20${data.mobile}%0aEmail-%20${data.email}%0aQuery-%20${data.query}`} target='_blank'>Submit</a></button>
        
         {/* login Modal */}
         <div className="modal fade" id="SubmitModal" tabIndex={-1} aria-labelledby="SubmitModalLabel" aria-hidden="true">

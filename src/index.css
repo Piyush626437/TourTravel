@@ -13,6 +13,12 @@ body {
     right: 20px;
 }
 
+.Telephone_float {
+    position: fixed;
+    bottom: 94px;
+    right: 20px;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -692,7 +698,7 @@ h6 {
     /* background: url(../image/small-left-arrow-pink.svg) no-repeat center; */
 }
 
-<style>.slick-prev::before {
+slick-prev::before {
     content: "â†";
 }
 
@@ -1901,7 +1907,7 @@ form textarea {
 
 .logo {
     width: 200px;
-    margin: -35vh;
+    margin: -5vh;
     margin-left: 8%;
 }
 
